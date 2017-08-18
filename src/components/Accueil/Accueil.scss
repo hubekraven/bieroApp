@@ -1,0 +1,57 @@
+@import '../../_variables.scss';
+
+.pageAccueil
+{
+    .contenu
+    {
+        padding-top: 0px; /* -top: 3 * $unite;*/
+        
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        
+        .bandeau
+        {
+            display: flex;
+            height: 3 * $unite;
+            background-color:#FFF8E1;
+            flex-direction: column;
+            justify-content: center;
+            
+            .btnAction
+            {
+                border: 3px dashed;
+                border-color: $couleur-accent;
+                margin: auto;
+                padding: 10px;
+                color: $couleur-accent;
+                font-weight: bold;
+                font-size: 18px;
+                transition: border-color 200ms, color 200ms;
+                text-decoration: none;
+                
+                &:hover
+                {
+                    color: #DDDDDD;
+                    border-color: #DDDDDD;
+                    transition: border-color 200ms, color 200ms;
+                }
+            }
+        }
+        .arguments
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 20%;
+            padding-right: 20%;
+            
+            div
+            {
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+    
+}
